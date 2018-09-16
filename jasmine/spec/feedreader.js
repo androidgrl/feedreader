@@ -57,6 +57,7 @@ $(function() {
       const container = document.getElementsByClassName('feed')[0];
       const firstEntry = container.firstElementChild.firstElementChild;
 
+      expect(firstEntry.classList[0]).toBe('entry');
       expect(firstEntry.innerText).toBe('This Business Analytics Grad Set Her Sights on Success, and Landed a New Job\n');
       done();
     })
